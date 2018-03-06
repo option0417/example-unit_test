@@ -5,8 +5,10 @@ package tw.com.wd.example.unittest;
  *
  */
 public interface DataStore {
-	/**
-	 * Backup text-data to store.
-	 */
-    public void backup(String data);
+    /**
+     * Backup text-data to store.
+     * @param data
+     * @return
+     */
+    public boolean backup(String data);
 }

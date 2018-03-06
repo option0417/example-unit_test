@@ -8,7 +8,11 @@ public class StoreDriver {
 		this.dataStore = dataStore;
 	}
 	
-	public void putToStore(String textData) {
-		this.dataStore.backup(textData);
+	public boolean putToStore(String textData) {
+		return this.dataStore.backup(textData);
 	}
+
+	public boolean isStoreExist() {
+	    return this.dataStore != null;
+    }
 }

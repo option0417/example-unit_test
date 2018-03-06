@@ -17,6 +17,6 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.add(1, 1);
 
-        Assert.assertNotEquals(1, result);
+        Assert.assertNotSame(1, result);
     }
 }
